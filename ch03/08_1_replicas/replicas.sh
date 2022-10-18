@@ -22,8 +22,10 @@ kubectl scale deployment/my-app --replicas=5
 kubectl describe deployment/my-app
 
 # ReplicaSet이 생성하는 Pod 상태 변화 확인 (Watch 모드)
+kubectl get rs -w
 
 # Deployment을 통해 생성한 Pod 상태 변화 확인 (Watch 모드)
+kubectl get deployment -w
 
 # ReplicaSet의 Pod 이벤트 
 kubectl describe rs/<replicaset-name>
