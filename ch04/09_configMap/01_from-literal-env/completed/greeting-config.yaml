@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: greeting-config
+data:
+  STUDENT_NAME: 홍길동
+  MESSAGE: 안녕
+  
